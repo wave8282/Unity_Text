@@ -32,13 +32,12 @@ public void SetParameter(float span, float speed, float bombratio)
         delta += Time.deltaTime;
         if (delta > span)
         {
-            delta = 0;
+            delta = 0.0f;
             GameObject item;
             float dice = Random.Range(0f, 1f);
             if (dice < bombRatio)
             {
-                  item = Instantiate(applePrefab, transform.position,
-                                                    transform.rotation);
+                  item = Instantiate(applePrefab, transform.position,transform.rotation);
             }
             else
             {

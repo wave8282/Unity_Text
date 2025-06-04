@@ -52,7 +52,7 @@ public class BasketController : MonoBehaviour
         }
         else if(other.gameObject.tag == "Bomb")
         {
-            Debug.Log("폭탄을 잡았다.");
+             Debug.Log("폭탄을 잡았다.");
             manager.GetComponent<GameManager>().GetBomb();
             aud.PlayOneShot(bombSE);
         }
